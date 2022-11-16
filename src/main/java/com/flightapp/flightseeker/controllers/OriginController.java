@@ -32,9 +32,9 @@ public class OriginController {
 
     @GetMapping ("/api/origin/{id}")
     public ResponseEntity<Origin> findOneById(@PathVariable Long id) {
-        Optional<Origin> laptopOptional = originRepository.findById(id);
-        if(laptopOptional.isPresent())
-            return ResponseEntity.ok(laptopOptional.get());
+        Optional<Origin> originOptional = originRepository.findById(id);
+        if(originOptional.isPresent())
+            return ResponseEntity.ok(originOptional.get());
         else return ResponseEntity.notFound().build();
     }
 

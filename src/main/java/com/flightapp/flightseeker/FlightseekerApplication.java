@@ -2,7 +2,7 @@ package com.flightapp.flightseeker;
 
 import com.flightapp.flightseeker.entities.Origin;
 import com.flightapp.flightseeker.repositories.OriginRepository;
-
+import com.flightapp.flightseeker.PriceRequest;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
@@ -16,7 +16,7 @@ public class FlightseekerApplication {
 	context.getBean(OriginRepository.class);
 	OriginRepository originRepository = context.getBean(OriginRepository.class);
 	
-	
+
 	}
 
 }
